@@ -122,7 +122,10 @@
       "tags": {
         "displayName": "Availability Set Puppet Master",
         "quickstartName": "[variables('quickstartTags').name]",        
-        "provider": "[variables('puppetTags').provider]"
+        "provider": "[variables('puppetTags').provider]",
+        "created_by": "shane.sorbello@puppet.com",
+        "department": "TSE",
+        "project": "demo"
       },
       "properties": {
       }
@@ -136,7 +139,10 @@
       "tags": {
         "displayName": "Puppet Agents Availability Set",
         "quickstartName": "[variables('quickstartTags').name]",        
-        "provider": "[variables('redHatTags').provider]"
+        "provider": "[variables('redHatTags').provider]",
+        "created_by": "shane.sorbello@puppet.com",
+        "department": "TSE",
+        "project": "demo"
       },
       "properties": {
       }
@@ -150,7 +156,10 @@
       "tags": {
         "displayName": "Puppet NSG",
         "quickstartName": "[variables('quickstartTags').name]",        
-        "provider": "[variables('puppetTags').provider]"
+        "provider": "[variables('puppetTags').provider]",
+        "created_by": "shane.sorbello@puppet.com",
+        "department": "TSE",
+        "project": "demo"
       },
       "properties": {
         "securityRules": [
@@ -262,7 +271,10 @@
       "tags": {
         "displayName": "Linux Agent NSG",
         "quickstartName": "[variables('quickstartTags').name]",        
-        "provider": "[variables('redHatTags').provider]"
+        "provider": "[variables('redHatTags').provider]",
+        "created_by": "shane.sorbello@puppet.com",
+        "department": "TSE",
+        "project": "demo"
       },
       "properties": {
         "securityRules": [
@@ -374,7 +386,10 @@
       "tags": {
         "displayName": "Windows Agent NSG",
         "quickstartName": "[variables('quickstartTags').name]",        
-        "provider": "[variables('redHatTags').provider]"
+        "provider": "[variables('redHatTags').provider]",
+        "created_by": "shane.sorbello@puppet.com",
+        "department": "TSE",
+        "project": "demo"
       },
       "properties": {
         "securityRules": [
@@ -500,7 +515,10 @@
       "tags": {
         "displayName": "Puppet Master Storage Account",
         "quickstartName": "[variables('quickstartTags').name]",        
-        "provider": "[variables('puppetTags').provider]"
+        "provider": "[variables('puppetTags').provider]",
+        "created_by": "shane.sorbello@puppet.com",
+        "department": "TSE",
+        "project": "demo"
       },
       "properties": {
         "accountType": "[variables('StorageAccountType')]"
@@ -515,7 +533,10 @@
       "tags": {
         "displayName": "Linux Agent Storage Account",
         "quickstartName": "[variables('quickstartTags').name]",        
-        "provider": "[variables('redHatTags').provider]"
+        "provider": "[variables('redHatTags').provider]",
+        "created_by": "shane.sorbello@puppet.com",
+        "department": "TSE",
+        "project": "demo"
       },
       "properties": {
         "accountType": "[variables('storageAccountType')]"
@@ -530,7 +551,10 @@
       "tags": {
         "displayName": "Windows Agent Storage Account",
         "quickstartName": "[variables('quickstartTags').name]",        
-        "provider": "[variables('redHatTags').provider]"
+        "provider": "[variables('redHatTags').provider]",
+        "created_by": "shane.sorbello@puppet.com",
+        "department": "TSE",
+        "project": "demo"
       },
       "properties": {
         "accountType": "[variables('storageAccountType')]"
@@ -545,7 +569,10 @@
       "tags": {
         "displayName": "Diagnostics Storage Account",
         "quickstartName": "[variables('quickstartTags').name]",        
-        "provider": "[variables('redHatTags').provider]"
+        "provider": "[variables('redHatTags').provider]",
+        "created_by": "shane.sorbello@puppet.com",
+        "department": "TSE",
+        "project": "demo"
       },
       "properties": {
         "accountType": "Standard_LRS"
@@ -560,7 +587,10 @@
       "tags": {
         "displayName": "Puppet Virtual Network",
         "quickstartName": "[variables('quickstartTags').name]",        
-        "provider": "[variables('redHatTags').provider]"
+        "provider": "[variables('redHatTags').provider]",
+        "created_by": "shane.sorbello@puppet.com",
+        "department": "TSE",
+        "project": "demo"
       },
       "dependsOn": [
         "[concat('Microsoft.Network/networkSecurityGroups/', variables('puppetNsgName'))]",
@@ -613,7 +643,10 @@
       "tags": {
         "displayName": "Public IP - Puppet Master",
         "quickstartName": "[variables('quickstartTags').name]",        
-        "provider": "[variables('redHatTags').provider]"
+        "provider": "[variables('redHatTags').provider]",
+        "created_by": "shane.sorbello@puppet.com",
+        "department": "TSE",
+        "project": "demo"
       },
       "properties": {
         "publicIPAllocationMethod": "Static",
@@ -631,7 +664,10 @@
       "tags": {
         "displayName": "LB Public IP",
         "quickstartName": "[variables('quickstartTags').name]",        
-        "provider": "[variables('redHatTags').provider]"
+        "provider": "[variables('redHatTags').provider]",
+        "created_by": "shane.sorbello@puppet.com",
+        "department": "TSE",
+        "project": "demo"
       },
       "properties": {
         "publicIPAllocationMethod": "Static",
@@ -650,7 +686,10 @@
       "tags": {
         "displayName": "Load Balancer",
         "quickstartName": "[variables('quickstartTags').name]",        
-        "provider": "[variables('redHatTags').provider]"
+        "provider": "[variables('redHatTags').provider]",
+        "created_by": "shane.sorbello@puppet.com",
+        "department": "TSE",
+        "project": "demo"
       },
       "dependsOn": [
         "[concat('Microsoft.Network/publicIPAddresses/', variables('lbIPAddressName'))]"
@@ -686,7 +725,10 @@
       "tags": {
         "displayName": "LB nat rules-RDP",
         "quickstartName": "[variables('quickstartTags').name]",        
-        "provider": "[variables('redHatTags').provider]"
+        "provider": "[variables('redHatTags').provider]",
+        "created_by": "shane.sorbello@puppet.com",
+        "department": "TSE",
+        "project": "demo"
       },
       "copy": {
         "name": "lbNatLoop1",
@@ -714,7 +756,10 @@
       "tags": {
         "displayName": "LB nat rules-SSH",
         "quickstartName": "[variables('quickstartTags').name]",        
-        "provider": "[variables('redHatTags').provider]"
+        "provider": "[variables('redHatTags').provider]",
+        "created_by": "shane.sorbello@puppet.com",
+        "department": "TSE",
+        "project": "demo"
       },
       "copy": {
         "name": "lbNatLoop2",
@@ -742,7 +787,10 @@
       "tags": {
         "displayName": "Puppet Master NIC",
         "quickstartName": "[variables('quickstartTags').name]",        
-        "provider": "[variables('puppetTags').provider]"
+        "provider": "[variables('puppetTags').provider]",
+        "created_by": "shane.sorbello@puppet.com",
+        "department": "TSE",
+        "project": "demo"
       },
       "dependsOn": [
         "[concat('Microsoft.Network/publicIPAddresses/', variables('publicIPAddressNamePuppetMaster'))]",
@@ -776,7 +824,10 @@
       "tags": {
         "displayName": "Linux Agent NICs",
         "quickstartName": "[variables('quickstartTags').name]",        
-        "provider": "[variables('redHatTags').provider]"
+        "provider": "[variables('redHatTags').provider]",
+        "created_by": "shane.sorbello@puppet.com",
+        "department": "TSE",
+        "project": "demo"
       },
       "copy": {
         "name": "linuxAgentNicLoop",
@@ -822,7 +873,10 @@
       "tags": {
         "displayName": "Windows Agent NICs",
         "quickstartName": "[variables('quickstartTags').name]",        
-        "provider": "[variables('redHatTags').provider]"
+        "provider": "[variables('redHatTags').provider]",
+        "created_by": "shane.sorbello@puppet.com",
+        "department": "TSE",
+        "project": "demo"
       },
       "copy": {
         "name": "windowsAgentNicLoop",
@@ -869,7 +923,10 @@
       "tags": {
         "displayName": "Puppet Master VM",
         "quickstartName": "[variables('quickstartTags').name]",        
-        "provider": "[variables('puppetTags').provider]"
+        "provider": "[variables('puppetTags').provider]",
+        "created_by": "shane.sorbello@puppet.com",
+        "department": "TSE",
+        "project": "demo"
       },
       "dependsOn": [
         "[concat('Microsoft.Storage/storageAccounts/', variables('puppetStorageName'))]",
@@ -933,7 +990,10 @@
       "tags": {
         "displayName": "Puppet Master VM Extension",
         "quickstartName": "[variables('quickstartTags').name]",        
-        "provider": "[variables('puppetTags').provider]"
+        "provider": "[variables('puppetTags').provider]",
+        "created_by": "shane.sorbello@puppet.com",
+        "department": "TSE",
+        "project": "demo"
       },
       "dependsOn": [
         "[concat('Microsoft.Compute/virtualMachines/', variables('puppetMasterVmName'))]"
@@ -964,7 +1024,10 @@
       "tags": {
         "displayName": "Windows Agent VMs",
         "quickstartName": "[variables('quickstartTags').name]",        
-        "provider": "[variables('redHatTags').provider]"
+        "provider": "[variables('redHatTags').provider]",
+        "created_by": "shane.sorbello@puppet.com",
+        "department": "TSE",
+        "project": "demo"
       },
       "copy": {
         "name": "windowsAgentVmLoop",
@@ -1026,7 +1089,10 @@
       "tags": {
         "displayName": "Windows Agent VM Extension",
         "quickstartName": "[variables('quickstartTags').name]",        
-        "provider": "[variables('redHatTags').provider]"
+        "provider": "[variables('redHatTags').provider]",
+        "created_by": "shane.sorbello@puppet.com",
+        "department": "TSE",
+        "project": "demo"
       },
       "copy": {
         "name": "puppetAgentExtLoop",
@@ -1055,7 +1121,10 @@
       "tags": {
         "displayName": "Linux Agent VMs",
         "quickstartName": "[variables('quickstartTags').name]",        
-        "provider": "[variables('redHatTags').provider]"
+        "provider": "[variables('redHatTags').provider]",
+        "created_by": "shane.sorbello@puppet.com",
+        "department": "TSE",
+        "project": "demo"
       },
       "copy": {
         "name": "redhatAgentVmLoop",
@@ -1117,7 +1186,10 @@
       "tags": {
         "displayName": "Linux Agent VM Extension",
         "quickstartName": "[variables('quickstartTags').name]",        
-        "provider": "[variables('puppetTags').provider]"
+        "provider": "[variables('puppetTags').provider]",
+        "created_by": "shane.sorbello@puppet.com",
+        "department": "TSE",
+        "project": "demo"
       },
       "copy": {
         "name": "linuxAgentExtLoop",
