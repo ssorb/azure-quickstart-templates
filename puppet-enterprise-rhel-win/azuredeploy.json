@@ -24,9 +24,9 @@
     },
     "windowsAgentCount": {
       "type": "int",
-      "minValue": 1,
+      "minValue": 0,
       "maxValue": 20,
-      "defaultValue": 2,
+      "defaultValue": 1,
       "metadata": {
         "description": "Number of Windows Puppet Agents to deploy. Deploys Windows Server 2016."
       }
@@ -34,9 +34,9 @@
     },
     "linuxAgentCount": {
       "type": "int",
-      "minValue": 1,
+      "minValue": 0,
       "maxValue": 20,
-      "defaultValue": 2,
+      "defaultValue": 1,
       "metadata": {
         "description": "Number of Linux Puppet Agents to deploy. Deploys RHEL 7.2"
       }
